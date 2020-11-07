@@ -1,21 +1,3 @@
-class Person{
-	private String name;
-	private int age;
-	private String address;
-
-	Person(String _name,int _age,String _address) {
-		name = _name;
-		age = _age;
-		address = _address;
-	}
-
-	void say(){
-		System.out.println("„‚Ì–¼‘O‚Í" + name + "‚Å‚·B”N—î‚Í" + age 
-		+ "ÎZŠ‚Í" + address + "‚Å‚·B");
-	}
-
-}
-
 
 class PersonTest {
 	public static void main(String[] args) {
@@ -24,14 +6,13 @@ class PersonTest {
 		people[1] = new Person("‰Ôq",18,"–kŠC“¹D–ys");
 		people[2] = new Person("‰Ôq",18,"–kŠC“¹D–ys");
 
-		// ’l‚ğ•ÏX‚·‚é–‚ªo—ˆ‚é
-		people[1].name = "Ÿ˜Y";
-		people[1].age = 15;
-		people[1].address = "•Ÿ‰ªŒ§•Ÿ‰ªs";
-		people[2].name = "O˜Y";
-		people[2].age = 25;
-		people[2].address = "‹{éŒ§å‘äs";
-
+		people[1].setName("Ÿ˜Y");
+		people[1].setAge(17);
+		people[1].setAddress("•Ÿ‰ªŒ§•Ÿ‰ªs");
+		people[2].setName("O˜Y");
+		people[2].setAge(15);
+		people[2].setAddress("‹{éŒ§å‘äs");
+		
 
 		for(int i = 0; i< people.length; i++){
 			people[i].say();
