@@ -9,9 +9,9 @@ class Person{
 		address = _address;
 	}
 
-	String say(){
-		String str = "„‚Ì–¼‘O‚Í" + name + "‚Å‚·B”N—î‚Í" + age + "Î‚ÅZŠ‚Í" + 		address + "‚Å‚·B";
-		return str;
+	void say(){
+		System.out.println("„‚Ì–¼‘O‚Í" + name + "‚Å‚·B”N—î‚Í" + age 
+		+ "ÎZŠ‚Í" + address + "‚Å‚·B");
 	}
 
 }
@@ -31,11 +31,17 @@ class Hoge{
 
 class PersonTest {
 	public static void main(String[] args) {
-		Person taro = new Person("‘¾˜Y", 21, "“Œ‹“s`‹æ");
-		System.out.println(taro.say());
+		Person[] people = new Person[2];
+		people[0] = new Person("‘¾˜Y", 21, "“Œ‹“s`‹æ");
+		people[1] = new Person("‰Ôq",18,"–kŠC“¹D–ys");
 
-		Person hanako = new Person("‰Ôq",18,"–kŠC“¹D–ys");
-		System.out.println(hanako.say());
+		people[0].say();
+		people[1].say();
+
+		int[] num = new int[2];
+		num[0] = 1;
+		num[1] = 11;
+		System.out.println(num[1]);
 		
 		Hoge.nameAgeChange("huga",30);
 		System.out.println("–¼‘O" + Hoge.name + " ”N—î:"+ Hoge.age +" ZŠ:"			+ Hoge.address);
